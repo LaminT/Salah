@@ -14,14 +14,15 @@ protocol APIBuilder {
 }
 
 enum PrayerTimeAPI {
-    case getPrayerTime
+    #warning("This is where we have to pass the city in so we can create a query param to send to the service")
+    case getPrayerTime(city: City)
 }
 
 
-struct Citites {
-    var selectedCity = CityManager()
-    let cities: [String] = ["copenhagen", "arhus", "odense" , "malmo"]
-}
+//struct Citites {
+//    var selectedCity = CityManager()
+//    let cities: [String] = ["copenhagen", "arhus", "odense" , "malmo"]
+//}
 
 enum cities: String {
     case copenhagen = "copenhagen"
@@ -39,15 +40,28 @@ extension PrayerTimeAPI: APIBuilder {
     var baseUrl: URL {
         switch self {
         case .getPrayerTime:
-            return URL(string: "http://salah.dk/ws.php?")!
+            return URL(string: "http://salah.dk")!
         }
     }
     
     var path: String {
-        return "city=\(cities.copenhagen)"
+        return "/ws.php"
     }
     
     var urlRequest: URLRequest {
-        return URLRequest(url: self.baseUrl.appendingPathComponent(self.path))
+        
+        switch self {
+        case .getPrayerTime(let city):
+            
+            #warning("This is where we build the query string for the request notice how i seperated it")
+            var urlComponents = URLComponents(string: self.baseUrl.appendingPathComponent(self.path).absoluteString)
+            urlComponents?.queryItems = [
+                URLQueryItem(name: "city", value: city.rawValue)
+            ]
+            // Force unwrapping cos i know this won't be nil
+            return URLRequest(url: urlComponents!.url!)
+
+        }
+
     }
 }
