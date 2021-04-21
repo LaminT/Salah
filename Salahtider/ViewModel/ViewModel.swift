@@ -8,7 +8,7 @@ import Combine
 import Foundation
 
 protocol ViewModel {
-    func getPrayerTimes()
+    func getPrayerTimes(in city: City)
 }
 
 
@@ -27,12 +27,12 @@ class ViewModelImpl: ObservableObject, ViewModel {
         self.service = service
     }
     
-    func getPrayerTimes() {
+    func getPrayerTimes(in city: City) {
         
         self.state = .loading
         
         let cancellable = service
-            .request(from: .getPrayerTime)
+            .request(from: .getPrayerTime(city: city))
             .sink { res in
                 switch res {
                 
@@ -45,6 +45,7 @@ class ViewModelImpl: ObservableObject, ViewModel {
             } receiveValue: { response in
                 self.prayerTimes = response.prayerTimes
             }
+        
         self.cancellables.insert(cancellable)
     }
 }
