@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47037A9D2551A77B005866DB /* SalahtiderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47037A9C2551A77B005866DB /* SalahtiderApp.swift */; };
+		47037A9F2551A77B005866DB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47037A9E2551A77B005866DB /* HomeView.swift */; };
+		47037AA12551A77C005866DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47037AA02551A77C005866DB /* Assets.xcassets */; };
+		47037AA42551A77C005866DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47037AA32551A77C005866DB /* Preview Assets.xcassets */; };
+		47037AAD2551A7FC005866DB /* PrayerTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47037AAC2551A7FC005866DB /* PrayerTime.swift */; };
+		47974B01262EEA2B00EF1CDC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974B00262EEA2B00EF1CDC /* Date+Extension.swift */; };
+		47974B07262EF4E600EF1CDC /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974B06262EF4E600EF1CDC /* APIBuilder.swift */; };
+		47974B0B262EF7DD00EF1CDC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974B0A262EF7DD00EF1CDC /* APIError.swift */; };
+		47974B0F262F030C00EF1CDC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974B0E262F030C00EF1CDC /* Service.swift */; };
+		47974B13262F09F000EF1CDC /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974B12262F09F000EF1CDC /* ResultState.swift */; };
+		47974B17262F0AF100EF1CDC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974B16262F0AF100EF1CDC /* ViewModel.swift */; };
+		47974B1A262F143E00EF1CDC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974B19262F143E00EF1CDC /* ErrorView.swift */; };
+		47BFC4B62551D9D900921ABC /* CityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BFC4B52551D9D900921ABC /* CityManager.swift */; };
+		47C75AE82551D111001F9216 /* PrayerTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C75AE72551D110001F9216 /* PrayerTimeRow.swift */; };
+		47C75AEB2551D332001F9216 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C75AEA2551D332001F9216 /* Modifiers.swift */; };
+		47C75AEE2551D39C001F9216 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C75AED2551D39C001F9216 /* BlurView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47037A992551A77B005866DB /* Salahtider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salahtider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47037A9C2551A77B005866DB /* SalahtiderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahtiderApp.swift; sourceTree = "<group>"; };
+		47037A9E2551A77B005866DB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		47037AA02551A77C005866DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47037AA32551A77C005866DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47037AA52551A77C005866DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47037AAC2551A7FC005866DB /* PrayerTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTime.swift; sourceTree = "<group>"; };
+		47974B00262EEA2B00EF1CDC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		47974B06262EF4E600EF1CDC /* APIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBuilder.swift; sourceTree = "<group>"; };
+		47974B0A262EF7DD00EF1CDC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		47974B0E262F030C00EF1CDC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		47974B12262F09F000EF1CDC /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		47974B16262F0AF100EF1CDC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		47974B19262F143E00EF1CDC /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		47BFC4B52551D9D900921ABC /* CityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityManager.swift; sourceTree = "<group>"; };
+		47C75AE72551D110001F9216 /* PrayerTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeRow.swift; sourceTree = "<group>"; };
+		47C75AEA2551D332001F9216 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		47C75AED2551D39C001F9216 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47037A962551A77B005866DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47037A902551A77B005866DB = {
+			isa = PBXGroup;
+			children = (
+				47037A9B2551A77B005866DB /* Salahtider */,
+				47037A9A2551A77B005866DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47037A9A2551A77B005866DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47037A992551A77B005866DB /* Salahtider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47037A9B2551A77B005866DB /* Salahtider */ = {
+			isa = PBXGroup;
+			children = (
+				47037A9C2551A77B005866DB /* SalahtiderApp.swift */,
+				47974B11262F09C800EF1CDC /* State */,
+				47974B0D262F02D700EF1CDC /* Service */,
+				47974B09262EF7BF00EF1CDC /* APIError */,
+				47974B05262EF4C800EF1CDC /* Endpoint */,
+				47974AFF262EEA0D00EF1CDC /* Ext */,
+				47974B15262F0AB200EF1CDC /* ViewModel */,
+				47974AF4262EBEA900EF1CDC /* Views */,
+				47974AF7262EE35700EF1CDC /* Models */,
+				47C75AE72551D110001F9216 /* PrayerTimeRow.swift */,
+				47C75AEA2551D332001F9216 /* Modifiers.swift */,
+				47C75AED2551D39C001F9216 /* BlurView.swift */,
+				47BFC4B52551D9D900921ABC /* CityManager.swift */,
+				47037AA02551A77C005866DB /* Assets.xcassets */,
+				47037AA52551A77C005866DB /* Info.plist */,
+				47037AA22551A77C005866DB /* Preview Content */,
+			);
+			path = Salahtider;
+			sourceTree = "<group>";
+		};
+		47037AA22551A77C005866DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				47037AA32551A77C005866DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47974AF4262EBEA900EF1CDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47037A9E2551A77B005866DB /* HomeView.swift */,
+				47974B19262F143E00EF1CDC /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47974AF7262EE35700EF1CDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47037AAC2551A7FC005866DB /* PrayerTime.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47974AFF262EEA0D00EF1CDC /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				47974B00262EEA2B00EF1CDC /* Date+Extension.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		47974B05262EF4C800EF1CDC /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				47974B06262EF4E600EF1CDC /* APIBuilder.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		47974B09262EF7BF00EF1CDC /* APIError */ = {
+			isa = PBXGroup;
+			children = (
+				47974B0A262EF7DD00EF1CDC /* APIError.swift */,
+			);
+			path = APIError;
+			sourceTree = "<group>";
+		};
+		47974B0D262F02D700EF1CDC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				47974B0E262F030C00EF1CDC /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		47974B11262F09C800EF1CDC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				47974B12262F09F000EF1CDC /* ResultState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		47974B15262F0AB200EF1CDC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				47974B16262F0AF100EF1CDC /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47037A982551A77B005866DB /* Salahtider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47037AA82551A77C005866DB /* Build configuration list for PBXNativeTarget "Salahtider" */;
+			buildPhases = (
+				47037A952551A77B005866DB /* Sources */,
+				47037A962551A77B005866DB /* Frameworks */,
+				47037A972551A77B005866DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Salahtider;
+			productName = Salahtider;
+			productReference = 47037A992551A77B005866DB /* Salahtider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47037A912551A77B005866DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					47037A982551A77B005866DB = {
+						CreatedOnToolsVersion = 12.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 47037A942551A77B005866DB /* Build configuration list for PBXProject "Salahtider" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47037A902551A77B005866DB;
+			productRefGroup = 47037A9A2551A77B005866DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47037A982551A77B005866DB /* Salahtider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47037A972551A77B005866DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47037AA42551A77C005866DB /* Preview Assets.xcassets in Resources */,
+				47037AA12551A77C005866DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47037A952551A77B005866DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47037AAD2551A7FC005866DB /* PrayerTime.swift in Sources */,
+				47BFC4B62551D9D900921ABC /* CityManager.swift in Sources */,
+				47037A9F2551A77B005866DB /* HomeView.swift in Sources */,
+				47974B0B262EF7DD00EF1CDC /* APIError.swift in Sources */,
+				47C75AE82551D111001F9216 /* PrayerTimeRow.swift in Sources */,
+				47037A9D2551A77B005866DB /* SalahtiderApp.swift in Sources */,
+				47974B17262F0AF100EF1CDC /* ViewModel.swift in Sources */,
+				47974B07262EF4E600EF1CDC /* APIBuilder.swift in Sources */,
+				47974B01262EEA2B00EF1CDC /* Date+Extension.swift in Sources */,
+				47974B13262F09F000EF1CDC /* ResultState.swift in Sources */,
+				47974B0F262F030C00EF1CDC /* Service.swift in Sources */,
+				47974B1A262F143E00EF1CDC /* ErrorView.swift in Sources */,
+				47C75AEB2551D332001F9216 /* Modifiers.swift in Sources */,
+				47C75AEE2551D39C001F9216 /* BlurView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		47037AA62551A77C005866DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47037AA72551A77C005866DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47037AA92551A77C005866DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Salahtider/Preview Content\"";
+				DEVELOPMENT_TEAM = 7HA34S7STN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Salahtider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tambatech.Salahtider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47037AAA2551A77C005866DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Salahtider/Preview Content\"";
+				DEVELOPMENT_TEAM = 7HA34S7STN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Salahtider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tambatech.Salahtider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47037A942551A77B005866DB /* Build configuration list for PBXProject "Salahtider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47037AA62551A77C005866DB /* Debug */,
+				47037AA72551A77C005866DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47037AA82551A77C005866DB /* Build configuration list for PBXNativeTarget "Salahtider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47037AA92551A77C005866DB /* Debug */,
+				47037AAA2551A77C005866DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47037A912551A77B005866DB /* Project object */;
+}
